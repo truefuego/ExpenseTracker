@@ -8,10 +8,10 @@ function Expense(props) {
   return (
     <div className={props.expense.amount > 0 ? styles.cardGain : styles.cardLoss}>
       <div className={styles.cardHeading}>
-        {props.expense.date}
+        {props.expense.title}
       </div>
       <div className={styles.cardDescription}>
-        {props.expense.title}
+        {props.expense.date}
       </div>
       <div className={styles.cardDescription}>
         {Math.abs(props.expense.amount)}

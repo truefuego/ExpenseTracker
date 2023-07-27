@@ -26,7 +26,7 @@ function ExpenseDashboard() {
   return (
     <div>
       <h1>
-        {gain - loss} 
+        Savings: {gain - loss} 
       </h1>
       <h2>
           Earnings: {gain}

@@ -46,14 +46,12 @@ function AddExpense() {
 
   return (
     <div className={styles.container}>
-      <h2>Add New</h2>
+      <h2>Add New {!toggle ? "Expense" : "Earning"}</h2>
       <form className={styles.input_container}>
         <input className={styles.input} name="title" type="text" value={expenseTitle} placeholder='Title' onChange={(e) => setExpenseTitle(e.target.value)}/>
         <input className={styles.input} name="amount" type="number" value={expenseAmount} placeholder='Amount' onChange={(e) => setExpenseAmount(e.target.value)}/>
         <div className={styles.buttons}>
-          {
-            toggle ? (<button className={styles.btn} onClick={handleNewExpense}>Earned</button>) : (<button className={styles.btn} onClick={handleNewExpense}>Spent</button>)
-          }
+          <button className={styles.btn} onClick={handleNewExpense}>ADD</button>
           <button className={styles.btn} onClick={handleToggle}>Swap</button>
         </div>
       </form>
