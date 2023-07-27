@@ -3,10 +3,10 @@ import { devtools, persist} from 'zustand/middleware'
 
 const expenseStore = (set) => ({
     expenses: [],
-    
+
     createExpense: (expense) => {
         set((state) => ({
-            expenses: [expense, ...state.expenses]
+            expenses: [expense, ...state.expenses],
         }))
     },
 

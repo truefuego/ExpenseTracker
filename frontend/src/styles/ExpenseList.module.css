@@ -1,0 +1,35 @@
+.container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Create 3 columns with equal width */
+    gap: 10px; /* Add some gap between grid items */
+}
+
+@media (min-width: 320px) and (max-width: 550px) {
+    .container{
+        width: 100%;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 550px) and (max-width: 800px) {
+    .container{
+        margin: 20px;
+        width: 100%;
+        align-items: center;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media (min-width: 800px) and (max-width: 1180px) {
+    .container{
+        margin: 20px;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
