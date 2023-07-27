@@ -29,12 +29,12 @@ function ExpenseDashboard() {
         Savings: {gain - loss} ₹
       </h1>
       <h2>
-          Earnings: {gain} ₹
+        Earnings: {gain} ₹
       </h2>
       <h2>
-         Spent: {loss} ₹
+        Spent: {loss} ₹
       </h2>
-          <LastWeekStatistics />
+        <LastWeekStatistics />
     </div>
   )
 }
