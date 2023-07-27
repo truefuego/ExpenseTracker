@@ -14,7 +14,7 @@ function Expense(props) {
         {props.expense.date}
       </div>
       <div className={styles.cardDescription}>
-        {Math.abs(props.expense.amount)}
+        {Math.abs(props.expense.amount)} ₹
       </div>
       <button className={styles.cardButton} onClick={() => deleteExpense(props.expense.id)}>Delete</button> 
     </div>
